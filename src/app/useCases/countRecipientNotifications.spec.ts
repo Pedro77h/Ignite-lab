@@ -31,16 +31,8 @@ describe('Count Recipient notification', () => {
     const { count } = await countRecipientNotification.execute({
       recipientId: recipient,
     });
-/* 
+ 
 
-    Test don´t pass, alternative case i don´t resolve this problem
-
-    const search = notificationRepository.notifications.filter(
-      (notification) => {
-        notification.recipientId === recipient;
-      },
-    ).length;
- */
-    expect(count).toEqual(2);
+     expect(count).toEqual(2); 
   });
 });
