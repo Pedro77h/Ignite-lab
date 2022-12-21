@@ -27,7 +27,6 @@ describe('Unread notification', () => {
   it('should not be able to Unread notification if notification is not found', async () => { 
 
     const notificationRepository = new InMemoryNotificationRepository();
-
     const unreadNotification = new UnreadNotification(notificationRepository);
 
     
